@@ -1,0 +1,51 @@
+ &control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='al3ni',
+    pseudo_dir = '/home/compassion/Quantum_Espresso/q-e-qe-7.2/pseudo/',
+    outdir='/home/compassion/Quantum_Espresso/q-e-qe-7.2/tempdir/'
+ /
+&SYSTEM
+    ibrav=  8, 	! Orthorombic Primitive for Pnma
+    celldm(1) = 12.5  !12.514941779 ! 12.652522  ! 4.77 x 1.89 A,
+    celldm(2) = 1.106332663  !1.097641087	! b/a
+    celldm(3) = 0.733733224  !0.716781129	! c/a
+    nat= 16, 
+    ntyp= 2,
+    ecutwfc=36.0,
+    ecutrho=360.0,
+    occupations = 'smearing',
+    smearing = 'mp',
+    degauss = 0.02,
+    !space_group = 62,
+ /
+ &ELECTRONS
+    conv_thr  =  1.0d-8,
+    diago_david_ndim=6,
+    !mixing_beta = 0.1
+
+ /
+ 
+ATOMIC_SPECIES 
+ Al   26.982  Al.pz-n-rrkjus_psl.0.1.UPF
+ Ni   58.693  Ni.pz-n-rrkjus_psl.0.1.UPF
+
+ATOMIC_POSITIONS (crystal)
+Al            0.9913349642        0.7500000000        0.0839948558
+Al            0.5086650358        0.2500000000        0.5839948558
+Al            0.0086650358        0.2500000000        0.9160051442
+Al            0.4913349642        0.7500000000        0.4160051442
+Al            0.1715778511        0.0556601753        0.3626246525
+Al            0.3284221489        0.9443398247        0.8626246525
+Al            0.8284221489        0.5556601753        0.6373753475
+Al            0.6715778511        0.4443398247        0.1373753475
+Al            0.8284221489        0.9443398247        0.6373753475
+Al            0.6715778511        0.0556601753        0.1373753475
+Al            0.1715778511        0.4443398247        0.3626246525
+Al            0.3284221489        0.5556601753        0.8626246525
+Ni            0.1290366960        0.7500000000        0.5544372663
+Ni            0.3709633040        0.2500000000        0.0544372663
+Ni            0.8709633040        0.2500000000        0.4455627337
+Ni            0.6290366960        0.7500000000        0.9455627337
+K_POINTS AUTOMATIC
+9 9 9 1 1 1 

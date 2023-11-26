@@ -1,0 +1,43 @@
+ &control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='al2cu',
+    pseudo_dir = '/home/compassion/Quantum_Espresso/q-e-qe-7.2/pseudo/',
+    outdir='/home/compassion/Quantum_Espresso/q-e-qe-7.2/tempdir/'
+    forc_conv_thr=1.d-5,
+    verbosity = 'low'
+ /
+ &system
+    ibrav=  7, 
+    celldm(1) = 11.62          !11.589, !6.0 A,
+    celldm(3) = 0.809441398    !0.806,
+    nat= 6, 
+    ntyp= 2,
+    ecutwfc=38.0,
+    ecutrho=380.0,
+    occupations = 'smearing',
+    smearing = 'mp',
+    degauss = 0.02,
+    !space_group = 140,
+
+ /
+ &electrons
+    conv_thr =  1.0d-8,
+    diago_david_ndim=8
+    !mixing_beta = 0.4,
+    !adaptive_thr = .TRUE.,
+
+ /
+ATOMIC_SPECIES
+ Al   26.982  Al.pbe-n-rrkjus_psl.1.0.0.UPF
+ Cu   63.546  Cu.pbe-d-rrkjus.UPF
+
+ATOMIC_POSITIONS (crystal)
+Cu            0.0000000000        0.2500000000        0.2500000000
+Cu            0.0000000000        0.7500000000        0.7500000000
+Al            0.8156146636        0.8421926682        0.3421926682
+Al            0.1843853364        0.1578073318        0.6578073318
+Al            0.5000000000        0.3421926682        0.1578073318
+Al            0.5000000000        0.6578073318        0.8421926682
+K_POINTS AUTOMATIC
+9 9 9 1 1 1 

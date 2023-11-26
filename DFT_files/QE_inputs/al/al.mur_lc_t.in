@@ -1,0 +1,32 @@
+ &control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='aluminum',
+    pseudo_dir = '/home/compassion/Quantum_Espresso/q-e-qe-7.2/pseudo/',
+    outdir='/home/compassion/Quantum_Espresso/q-e-qe-7.2/tempdir/'
+    forc_conv_thr=1.d-5
+ /
+ &system
+    ibrav=  2, 
+    celldm(1) = 7.63 !7.63 ! 4.038 A  ! Equilibrium lattice constant of Aluminum (in alat units) this should be converted to Bohr's unit
+    nat= 1, 
+    ntyp= 1,
+    ecutwfc=30.0,       ! Adjust this value as needed for Aluminum
+    ecutrho=120.0,      ! Adjust this value as needed for Aluminum
+    occupations = 'smearing',
+    smearing = 'mp',
+    degauss = 0.02,
+    space_group = 225,
+ /
+ &electrons
+    conv_thr =  1.0d-8,
+    adaptive_thr = .TRUE., ! takes max(conv_thr, 0.1x dexx)
+    
+ /
+ATOMIC_SPECIES
+ Al  26.981539  Al.pbe-nl-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS {crystal_sg}
+Al  4a
+
+K_POINTS AUTOMATIC
+24 24 24 1 1 1 
