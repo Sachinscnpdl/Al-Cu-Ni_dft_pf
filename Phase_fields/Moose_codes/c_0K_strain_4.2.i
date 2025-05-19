@@ -1,4 +1,5 @@
-# ~/moose_projects/newt/examples/Sachin/Al-Cu-Ni$ mpiexec -n 22 ~/moose_projects/newt/newt-opt -i Al_Cu_Ni_el.i
+# /path/of/the/directory/of/input-file$ mpiexec -n 22 ~/moose_projects/newt/newt-opt -i c_0K_strain_4.2.i
+.i
 # Authored by Sachin Poudel July 12 2023
 # The eta1 region (Al rich) grows
 # The eta2 region shrinks
@@ -6,7 +7,7 @@
 # Since bulk F1 is a function of c1a, c1b and c2b, so the phase compositions of eta3 are also c1a,c1b and c1c
 # Thus, c3a=c1a, c3b=c1b and c3c=c1c 
 # Hence the variables c1a, c1b and c1c represent the phase compositions of both eta1 and eta3
-# This test is for the 2-phase KKS model
+# This test is for the 3-phase 6order parameters KKS model
 ##########################################################################################################################################################################
 # Index notation for element or component in Multicomponent System: The index for component's composition 'c' is followed by the suffixes in alphabet representation a,b,...
 # E.g. in ternary system A-B-C, composition information of two components is sufficient, so 'a' and 'b' will be used as a suffixes for the composition variables ca and cb
