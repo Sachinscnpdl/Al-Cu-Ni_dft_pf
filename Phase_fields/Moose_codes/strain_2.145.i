@@ -7,10 +7,12 @@
 # Thus, c3a=c1a, c3b=c1b and c3c=c1c 
 # Hence the variables c1a, c1b and c1c represent the phase compositions of both eta1 and eta3
 # This test is for the 2-phase KKS model
-###########################################################################################################################
-# The multicomponent is represented by the suffixes a and b for ternary system A-B-C
-# For multiphase system with eta1, eta2, and eta3, the suffixes 1,2 and 3 come after the variables and materials properties  
-############################################################################################################################
+##########################################################################################################################################################################
+# Index notation for element or component in Multicomponent System: The index for component's composition 'c' is followed by the suffixes in alphabet representation a,b,...
+# E.g. in ternary system A-B-C, composition information of two components is sufficient, so 'a' and 'b' will be used as a suffixes for the composition variables ca and cb
+# Index notation for phase type in multiphase system { eta1, eta2,..., etaN}:  the suffixes 1,2 ... N come after the 'eta' variables and materials properties  
+# E.g. For six order parameters, there will be six variables, so they will be represented as eta1, eta2, ..., eta6
+##########################################################################################################################################################################
 # [GlobalParams]
 #   displacements = 'disp_x disp_y'
 # []
