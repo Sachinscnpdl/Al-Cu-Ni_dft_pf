@@ -1,4 +1,4 @@
-# ~/moose_projects/newt/examples/Sachin/Al-Cu-Ni$ mpiexec -n 22 ~/moose_projects/newt/newt-opt -i Al_Cu_Ni_el.i
+# /path/of/the/directory/of/input-file$ mpiexec -n 22 ~/moose_projects/newt/newt-opt -i Al_Cu_Ni_el.i
 # Authored by Sachin Poudel July 12 2023
 # The eta1 region (Al rich) grows
 # The eta2 region shrinks
