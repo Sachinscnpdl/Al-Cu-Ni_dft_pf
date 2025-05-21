@@ -7,3 +7,7 @@ Phase field methods
 
 
 The materials in the study are: Al-Cu-Ni alloy and Al2Cu, Al3Ni intermetallic compounds
+
+
+
+
