@@ -33,6 +33,11 @@ E.g. to convert to file in .py format, the following command is issued:
 $  jupyter nbconvert --to script filename.ipynb
 
 
+# How to Cite This Work:
+
+Poudel, S., Moelans, N., Thapa, R., Timofiejczuk, A., Panthi, D., & Kunwar, A. (2024). Unraveling elastochemical effects in microstructural evolution of Al–Cu–Ni system through DFT-informed multi-phase field simulations. International Journal of Solids and Structures, 300, 112894. https://doi.org/10.1016/j.ijsolstr.2024.112894
+
+
 
 
 
